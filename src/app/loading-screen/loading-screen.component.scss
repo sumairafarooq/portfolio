@@ -1,0 +1,37 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  color: #00d4d4;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.logo-part {
+  display: inline-block;
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.loader-line {
+  width: 100px;
+  height: 4px;
+  background: #00d4d4;
+  margin-bottom: 10px;
+  animation: loading 2s infinite;
+}
+
+@keyframes loading {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
