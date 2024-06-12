@@ -22,6 +22,6 @@ export class LoadingScreenComponent  implements OnInit {
         clearInterval(interval);
         this.router.navigate(['/dashboard']);
       }
-    }, 100); // Adjust the interval speed as needed
+    }, 50); // Adjust the interval speed as needed
   }
 }

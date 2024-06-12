@@ -1,6 +1,32 @@
-<app-navbar></app-navbar>
-<div class="home">
-    <h1>Welcome to My Portfolio</h1>
-</div>
-
-
+<div class="home-container">
+    <header class="hero">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Discover my work and projects</p>
+    </header>
+  
+    <section class="introduction">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm <span class="sumi">Sumaira Farooq</span>, a passionate developer with a knack for creating elegant and efficient solutions. I love coding, designing, and bringing ideas to life.
+      </p>
+    </section>
+  
+    <section class="portfolio-links">
+      <div class="card">
+        <h3>Projects</h3>
+        <p>Check out my latest projects and see what I've been working on.</p>
+        <a routerLink="/projects" class="btn">View Projects</a>
+      </div>
+      <div class="card">
+        <h3>About</h3>
+        <p>Learn more about my background, skills, and experience.</p>
+        <a routerLink="/about" class="btn">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Contact</h3>
+        <p>Get in touch with me for collaborations or inquiries.</p>
+        <a routerLink="/contact" class="btn">Contact Me</a>
+      </div>
+    </section>
+  </div>
+  
