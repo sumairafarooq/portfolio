@@ -1,0 +1,33 @@
+nav {
+    background-color: #1995AD;
+    padding: 1em;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav ul li {
+    margin: 0 1em;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+  
