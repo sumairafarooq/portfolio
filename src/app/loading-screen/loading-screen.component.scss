@@ -4,37 +4,77 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #000;
+  background-color: #A1D6E2;
   color: #1995AD;
   font-family: 'MyFont';
+  padding: 20px; /* Add padding for smaller screens */
+  box-sizing: border-box;
 }
 
-.logo {
-  font-size: 48px;
+.header {
+  display: flex;
+  align-items: center;
+  font-size: 2em; /* Adjusted for better responsiveness */
   font-weight: bold;
+  text-align: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .logo-part {
-  display: inline-block;
+  margin-right: 10px; /* Add some space between text and logo */
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+  width: 150px; /* Adjust size for smaller screens */
+  margin-top: 10px; /* Margin for smaller screens */
 }
 
 .loading-text {
   margin-top: 20px;
-  font-size: xx-large;
-  align-items: center !important;
-  margin-left: 20px;
-  margin-top: 10px;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .loader-line {
-  width: 1000px;
+  width: 80%;
+  max-width: 1000px; /* Ensures the loader does not exceed container width */
   height: 4px;
-  background: #A1D6E2;
-  margin-bottom: 10px;
+  background: #1995AD;
+  margin-top: 10px;
   animation: loading 2s infinite;
 }
 
 @keyframes loading {
   0% { transform: scaleX(0); }
   100% { transform: scaleX(1); }
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.5em;
+  }
+
+  .loading-text {
+    font-size: 1.25em;
+  }
+
+  .loader-line {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1.2em;
+  }
+
+  .loading-text {
+    font-size: 1em;
+  }
+
+  .loader-line {
+    width: 95%;
+  }
 }
