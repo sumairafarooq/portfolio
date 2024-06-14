@@ -9,6 +9,7 @@
   font-family: 'MyFont';
   padding: 20px; /* Add padding for smaller screens */
   box-sizing: border-box;
+  text-align: center; /* Center-align text for better readability on small screens */
 }
 
 .header {
@@ -18,6 +19,7 @@
   font-weight: bold;
   text-align: center;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center; /* Center align items within the header */
 }
 
 .logo-part {
@@ -76,5 +78,10 @@
 
   .loader-line {
     width: 95%;
+  }
+
+  .header img {
+    width: 120px; /* Further adjust logo size for very small screens */
+    margin-top: 5px; /* Reduce margin for very small screens */
   }
 }
