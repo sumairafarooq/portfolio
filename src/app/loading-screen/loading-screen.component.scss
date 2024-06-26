@@ -4,32 +4,33 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #A1D6E2;
-  color: #1995AD;
+  background-color: #023A6B;
+  color: #4DE3E4;
   font-family: 'MyFont';
-  padding: 20px; /* Add padding for smaller screens */
+  padding: 20px; 
   box-sizing: border-box;
-  text-align: center; /* Center-align text for better readability on small screens */
+  text-align: center; 
 }
 
 .header {
   display: flex;
   align-items: center;
-  font-size: 2em; /* Adjusted for better responsiveness */
+  font-size: 2em;
   font-weight: bold;
   text-align: center;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
-  justify-content: center; /* Center align items within the header */
+  flex-wrap: wrap; 
+  justify-content: center; 
 }
 
 .logo-part {
-  margin-right: 10px; /* Add some space between text and logo */
+  margin-right: 10px; 
+  font-size: 60px;
 }
 
 .header img {
   max-width: 100%;
-  height: auto;
-  width: 150px; /* Adjust size for smaller screens */
+  height: 250px;
+  width: 250px; /* Adjust size for smaller screens */
   margin-top: 10px; /* Margin for smaller screens */
 }
 
@@ -37,13 +38,14 @@
   margin-top: 20px;
   font-size: 1.5em;
   text-align: center;
+  font-size: 30px;
 }
 
 .loader-line {
   width: 80%;
   max-width: 1000px; /* Ensures the loader does not exceed container width */
   height: 4px;
-  background: #1995AD;
+  background: #4DE3E4;
   margin-top: 10px;
   animation: loading 2s infinite;
 }
@@ -81,7 +83,7 @@
   }
 
   .header img {
-    width: 120px; /* Further adjust logo size for very small screens */
-    margin-top: 5px; /* Reduce margin for very small screens */
+    width: 120px; 
+    margin-top: 5px; 
   }
 }
