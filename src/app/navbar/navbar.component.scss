@@ -1,8 +1,15 @@
 nav {
-    background-color: #4DE3E4;
+    background-color: #023A6B;
     padding: 1em;
   }
-  
+  .sumi{
+    font-family: 'MyFont';
+    color: #47C6F3;
+    font-weight: 400;
+    font-size: xx-large;
+   padding: 10px;
+   letter-spacing: 0.1cap;
+  }
   nav ul {
     list-style: none;
     display: flex;
@@ -14,8 +21,10 @@ nav {
   }
   
   nav ul li a {
-    color: black;
+    color: #47C6F3;
     text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
   }
   
   nav ul li a:hover {

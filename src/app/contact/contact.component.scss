@@ -1,18 +1,14 @@
-// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  
+
 }
 
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
- 
+
 }
 
 ul {
@@ -39,7 +35,8 @@ input {
 .contact-sec {
   align-items: center;
   display: flex;
-  background-color: #5cbde466;
+  background-color: #5dc7ee;
+  margin-top: 0.01cm;
 }
 
 .contact-sec .contact-ul li,
@@ -56,8 +53,9 @@ input {
   margin-right: 10px;
   border-radius: 50%;
 }
+
 .contact-detail a {
-  color: #000;
+  color: #023A6B;
   text-decoration: none;
 }
 
@@ -85,25 +83,30 @@ input {
   display: flex;
   justify-content: center;
 }
+
 .contact-detail span a {
   font-size: 20px;
   padding: 6px 12px;
-  color: #000;
+  color: #023A6B;
   border-radius: 50%;
   margin: 0px 5px;
 }
+
 .contact-detail span .fb {
   color: #3b5998;
   border: 3px solid #3b5998;
 }
+
 .contact-detail span .fb:hover {
   color: #fff;
   background-color: #3b5998;
 }
+
 .contact-detail span .youtube-play {
   color: red;
   border: 3px solid red;
 }
+
 .contact-detail span .youtube-play:hover {
   color: #fff;
   background-color: red;
@@ -113,15 +116,17 @@ input {
   color: #833ab4;
   border: 3px solid #833ab4;
 }
+
 .contact-detail span .insta:hover {
   color: #fff;
   background-color: #833ab4;
 }
 
 .contact-detail span .github {
-  color: black;
-  border: 3px solid black;
+  color: #023A6B;
+  border: 3px solid #023A6B;
 }
+
 .contact-detail span .github:hover {
   color: #fff;
   background-color: black;
@@ -139,9 +144,9 @@ form.contFrm {
   border: 0;
   margin: 10px 10px 10px 10px;
   border-radius: 8px;
-  padding:20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   font-size: 16px;
-  color: #000;
+  color: #023A6B;
 }
 
 .inptFld:focus {
@@ -153,6 +158,7 @@ form.contFrm {
   height: 75px;
   padding-top: 5px;
 }
+
 .inptBtn {
   height: 50px;
   border: 0;
@@ -163,7 +169,10 @@ form.contFrm {
   letter-spacing: 1px;
   cursor: pointer;
   width: 100%;
+  border-radius: 8px;
   max-width: 200px;
+  margin-left: 2cm;
+  margin-top: 0.8cm;
 }
 
 /* Responcive css Start */
@@ -180,7 +189,7 @@ form.contFrm {
 
   .contact-sec .contact-ul i {
     font-size: 14px;
-    padding: 6px;
+    // padding: 6px;
     margin-right: 6px;
   }
 
@@ -196,10 +205,11 @@ form.contFrm {
   .contact-detail span {
     width: auto;
   }
+
   .contact-detail span a {
     font-size: 18px;
     padding: 5px 10px;
-    color: #000;
+    color: #023A6B;
     border-radius: 50%;
     margin: 0px 5px 20px;
   }
@@ -210,13 +220,17 @@ form.contFrm {
     font-size: 26px;
     font-weight: 500;
   }
+
   .contact-sec {
-    border-radius: 10% 10% 0% 0% / 5% 5% 0% 0%;
+    // border-radius: 10% 10% 0% 0% / 5% 5% 0% 0%;
+    margin-top: 0.0cm;
+
   }
 
   .contact-sec .contact-ul i {
     border: none;
   }
+
   .inptFld {
     height: 36px;
     margin: 0 0 8px;
@@ -226,6 +240,7 @@ form.contFrm {
 }
 
 @media (max-width: 480px) {
+
   .contact-sec .contact-ul li,
   .contact-ul b {
     font-size: 16px;

@@ -9,7 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
-import { HomeComponent } from './home/home.component';
+
 // import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
@@ -22,8 +22,7 @@ import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
     NavbarComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent,
-    HomeComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
