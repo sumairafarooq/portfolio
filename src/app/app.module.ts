@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 // import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { DownloadComponent } from './download/download.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
     NavbarComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    DownloadComponent
   ],
   imports: [
     BrowserModule,

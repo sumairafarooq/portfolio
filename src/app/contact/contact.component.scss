@@ -3,7 +3,12 @@
   box-sizing: border-box;
 
 }
-
+.sumi{
+  font-family: 'MyFont';
+  font-weight: 400;
+  font-size: 40px;
+  background-color: transparent;
+}
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
@@ -104,12 +109,12 @@ input {
 
 .contact-detail span .youtube-play {
   color: red;
-  border: 3px solid red;
+  border: 3px solid rgba(160, 16, 16, 0.932);
 }
 
 .contact-detail span .youtube-play:hover {
   color: #fff;
-  background-color: red;
+  background-color: rgba(160, 16, 16, 0.932);
 }
 
 .contact-detail span .insta {

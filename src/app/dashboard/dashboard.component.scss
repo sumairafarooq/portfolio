@@ -83,15 +83,9 @@
     font-size: 40px;
     background-color: transparent;
   }
-  
-  // * {
-  //   margin: 0;
-  //   padding: 0;
-  //   background-color: #2f2f2f;
-  // }
   .main {
-    height: 100vh;
-    width: 100vw;
+    height: 75vh;
+    width: 97vw;
     position: relative;
     background-color: #8ccae0;
   }
@@ -127,16 +121,16 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-    margin-top: 500px;
+    margin-top: 50px;
     background-color: transparent;
 }
 
 .tag {
-    background-color: #00447A;
+    background-color: #8ccae0;
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 1rem;
-    color: #8ccae0;
+    color: #00447A;
     cursor: pointer;
     animation: bounce 2s infinite;
 }
