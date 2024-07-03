@@ -1,42 +1,147 @@
 nav {
-    background-color: #023A6B;
-    padding: 1em;
-  }
-  .sumi{
-    font-family: 'MyFont';
-    color: #47C6F3;
-    font-weight: 400;
-    font-size: xx-large;
-   padding: 10px;
-   letter-spacing: 0.1cap;
-  }
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  nav ul li {
-    margin: 0 1em;
-  }
-  
-  nav ul li a {
-    color: #47C6F3;
-    text-decoration: none;
+  background-color: #023A6B;
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.sumi {
+  font-family: 'MyFont';
+  color: #47C6F3;
+  font-weight: 400;
+  font-size: xx-large;
+  padding: 10px;
+  letter-spacing: 0.1em; /* changed from 0.1cap to 0.1em for better compatibility */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: #47C6F3;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Add padding to content below the navbar to prevent overlapping */
+.main-content {
+  padding-top: 4em; /* Adjust as necessary */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .sumi {
     font-size: x-large;
-    font-weight: bold;
   }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
+
+  nav ul li a {
+    font-size: large;
   }
-  
+
   h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
+    font-size: 1.8em;
   }
-  
+
   p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 992px) {
+  .sumi {
+    font-size: large;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0.5em;
+  }
+
+  nav ul li a {
+    font-size: medium;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sumi {
+    font-size: medium;
+  }
+
+  nav ul li a {
+    font-size: medium;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 576px) {
+  nav {
+    padding: 0.5em;
+  }
+
+  .sumi {
+    font-size: small;
+  }
+
+  nav ul li {
+    margin: 0.3em;
+  }
+
+  nav ul li a {
+    font-size: small;
+  }
+
+  h1 {
     font-size: 1.2em;
   }
-  
+
+  p {
+    font-size: 0.8em;
+  }
+}

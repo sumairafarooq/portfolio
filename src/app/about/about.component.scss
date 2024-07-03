@@ -1,12 +1,23 @@
+/* Updated CSS with adjustments for fixed navbar */
+
+nav {
+  background-color: #023A6B;
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
 .head {
-  padding: 10px 60px 10px 60px; 
+  padding: 70px 60px 10px 60px; /* Adjusted top padding to accommodate fixed navbar */
 }
 
 .main {
   background-color: #023A6B;
-  padding: 10px 60px 60px 90px;
-  // margin-top: 10px;
+  padding: 80px 60px 60px 90px; /* Adjusted top padding to accommodate fixed navbar */
   align-items: center;
+  margin-top: 70px; /* Added margin-top to ensure content starts below fixed navbar */
 }
 
 .sumi {
@@ -33,17 +44,19 @@ $lineWidth: 0.25em;
 $lineColor: rgba(255, 255, 255, 0.5);
 
 .mapWrapper {
-  position: relative; /* Changed from absolute to relative */
+  position: relative;
   width: $mapWidth;
   left: 50%;
   transform: translateX(-50%);
   background-color: #023A6B;
-  padding-top: 50px; /* Add padding to create space */
+  padding-top: 50px; /* Ensure there's space above the map content */
+
   .row {
     position: relative;
     width: 100%;
     left: 0;
     height: 6.5em;
+
     .itemBar {
       position: relative;
       display: inline-block;
@@ -51,11 +64,13 @@ $lineColor: rgba(255, 255, 255, 0.5);
       height: $lineWidth;
       margin-top: ($mapHeight * 2) - ($lineWidth / 2);
       background: $lineColor;
+
       .itemInfo {
         position: absolute;
         width: 100%;
         bottom: $lineWidth * 2;
         text-align: center;
+
         &:after {
           content: '';
           position: absolute;
@@ -69,11 +84,13 @@ $lineColor: rgba(255, 255, 255, 0.5);
           transition: width 0.2s ease-in, height 0.2s ease-in;
         }
       }
+
       &:hover .itemInfo:after {
         width: $lineWidth * 10;
         height: $lineWidth * 1;
         transition: width 0.2s ease-in, height 0.2s ease-in;
       }
+
       .itemDate {
         position: absolute;
         width: 100%;
@@ -83,6 +100,7 @@ $lineColor: rgba(255, 255, 255, 0.5);
         text-shadow: 1px 1px 2px black;
       }
     }
+
     &:nth-child(2n) .itemBar:first-child:after {
       content: '';
       position: absolute;
@@ -94,6 +112,7 @@ $lineColor: rgba(255, 255, 255, 0.5);
       border: $lineWidth solid $lineColor;
       border-right: unset;
     }
+
     &:nth-child(2n + 1) .itemBar:last-child:after {
       content: '';
       position: absolute;
@@ -105,8 +124,92 @@ $lineColor: rgba(255, 255, 255, 0.5);
       border: $lineWidth solid $lineColor;
       border-left: unset;
     }
+
     &:last-child .itemBar:after {
       display: none;
+    }
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .mapWrapper {
+    width: 90%;
+    padding-top: 30px;
+  }
+
+  .sumi {
+    font-size: 35px;
+  }
+
+  .itemBar {
+    .itemDate {
+      font-size: 1em;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  $columns: 2;
+
+  .mapWrapper {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .main {
+    padding: 10px 30px 30px 45px;
+  }
+
+  .sumi {
+    font-size: 30px;
+  }
+
+  .itemBar {
+    width: (100% / $columns);
+
+    .itemDate {
+      font-size: 0.9em;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  $columns: 1;
+
+  .mapWrapper {
+    padding-top: 10px;
+  }
+
+  .main {
+    padding: 10px 20px 20px 30px;
+  }
+
+  .sumi {
+    font-size: 25px;
+  }
+
+  .itemBar {
+    width: 100%;
+
+    .itemDate {
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding: 10px 10px 10px 20px;
+  }
+
+  .sumi {
+    font-size: 20px;
+  }
+
+  .itemBar {
+    .itemDate {
+      font-size: 0.7em;
     }
   }
 }
