@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { DownloadComponent } from './download/download.component';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DownloadComponent } from './download/download.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    LeafletModule
 
   ],
   providers: [],
