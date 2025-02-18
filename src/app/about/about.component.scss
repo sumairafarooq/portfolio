@@ -120,7 +120,7 @@ $lineColor: rgba(255, 255, 255, 0.5);
       height: ($mapHeight * 2) - $lineWidth;
       left: 100%;
       top: 0;
-      border-radius: 0 ($mapHeight * 2) ($mapHeight * 2) 0;
+      border-radius: 0 ($mapHeight * 2) ($mapHeight * 2) 0; 
       border: $lineWidth solid $lineColor;
       border-left: unset;
     }
